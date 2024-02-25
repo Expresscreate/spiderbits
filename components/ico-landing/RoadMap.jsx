@@ -94,8 +94,8 @@ const RoadMap = () => {
       }}
     >
       <div className="container relative z-10">
-        <h2 className="mb-6 font-display text-3xl text-white">Roadmap</h2>
-        <p className="mb-12 max-w-xl text-lg text-jacarta-300">
+        <h2 className="mb-6 font-display text-3xl text-center text-white">Roadmap</h2>
+        <p className="mb-6 text-lg text-jacarta-300 text-center">
           This timeline details our funding and development goals. Connect our
           AI to your exchange account and invest crypto automatically.
         </p>

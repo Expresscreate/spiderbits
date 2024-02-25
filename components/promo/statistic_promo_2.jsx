@@ -31,7 +31,7 @@ const Statistic_promo_2 = () => {
 chronological order, akin to traditional spider solitaire, to win prizes. By purchasing lottery tickets and staking Bits tokens, participants not only stand to win prizes but also earn profits from their
 holdings.
 							</p>
-							<Link href="/collection/explore_collection">
+							<Link href="#">
 								<a className="inline-block rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark">
 									JOIN THE PRESALE
 								</a>

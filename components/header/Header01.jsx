@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Link as ScrollLink } from 'react-scroll';
-import DarkMode from "../mode/DarkMode";
+
 import Logo from "./../../public/images/logo.png";
 import WhiteLogo from "./../../public/images/logo_white.png";
 import { v4 as uuidv4 } from "uuid";
@@ -11,7 +11,6 @@ import {
   isParentPageActive,
 } from "../../utils/daynamicNavigation";
 import { useEffect, useState } from "react";
-import WalletButton from "../wallet-btn/WalletButton";
 
 export default function Header01() {
   const [toggle, setToggle] = useState(false);
@@ -376,7 +375,7 @@ export default function Header01() {
           <div className="js-mobile-menu dark:bg-jacarta-800 invisible fixed inset-0 z-10 ml-auto items-center bg-white opacity-0 lg:visible lg:relative lg:inset-auto lg:flex lg:bg-transparent lg:opacity-100 dark:lg:bg-transparent" id="header">
             <nav className="navbar w-full">
               <ul className="flex flex-col lg:flex-row">
-                {/* home */}
+                {/* overview */}
                 <li className="js-nav-dropdown group relative">
                 <ScrollLink
                       to="header" // The id of the section you want to scroll to
@@ -514,24 +513,8 @@ export default function Header01() {
           {/* header menu conent end for desktop */}
 
           <div className="ml-auto flex lg:hidden">
-            <Link href="/profile/user_avatar">
-              <a
-                className="border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
-                aria-label="profile"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width={24}
-                  height={24}
-                  className="fill-jacarta-700 h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white"
-                >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path d="M11 14.062V20h2v-5.938c3.946.492 7 3.858 7 7.938H4a8.001 8.001 0 0 1 7-7.938zM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z" />
-                </svg>
-              </a>
-            </Link>
-            <DarkMode />
+            
+           
             <button
               className="js-mobile-toggle border-jacarta-100 hover:bg-accent dark:hover:bg-accent focus:bg-accent group ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
               aria-label="open mobile menu"
@@ -603,6 +586,9 @@ export default function Header01() {
 
         <nav className="navbar w-full">
           <ul className="flex flex-col lg:flex-row">
+
+
+            
             <li className="js-nav-dropdown group relative">
               <button
                 onClick={() => mobileCollapse(home.id)}
@@ -636,28 +622,11 @@ export default function Header01() {
                   isCollapse === home.id ? "block" : "hidden"
                 }`}
               >
-                {home?.pages?.map((page) => (
-                  <li key={page.id} onClick={() => setToggle(false)}>
-                    <Link href={page.path}>
-                      <a className="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors justify-between">
-                        <span
-                          className={`font-display ${
-                            isChildrenPageActive(route.asPath, page.path)
-                              ? "text-accent dark:text-accent"
-                              : "text-jacarta-700"
-                          } text-sm dark:text-white`}
-                        >
-                          {page.name}
-                        </span>
-                        {page.condition ? (
-                          <span className="rounded bg-green py-1 px-2 text-tiny font-bold uppercase leading-none text-white ml-4">
-                            new
-                          </span>
-                        ) : undefined}
-                      </a>
-                    </Link>
-                  </li>
-                ))}
+                
+
+               
+
+
               </ul>
             </li>
             <li className="js-nav-dropdown group relative">
@@ -716,132 +685,147 @@ export default function Header01() {
                 ))}
               </ul>
             </li>
-            <li className="js-nav-dropdown nav-item dropdown group relative">
-              <button
-                onClick={() => mobileCollapse(explore.id)}
-                className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
-              >
-                <span
-                  className={
-                    isParentPageActive(explore.pages, route.asPath)
-                      ? "text-accent dark:text-accent"
-                      : ""
-                  }
+
+            
+            <li className="js-nav-dropdown group relative">
+
+                <ScrollLink
+                          to="header" // The id of the section you want to scroll to
+                          spy={true} // Make Link selected when scroll is at its target's position
+                          smooth={true} // Enable smooth scrolling
+                          offset={0} // Offset from the element's top position
+                          duration={500} // Time in milliseconds for the scroll to complete
                 >
-                  {explore.name}
-                </span>
-                <i className="lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width={24}
-                    height={24}
-                    className="h-4 w-4 dark:fill-white"
+                  <button
+                    className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
                   >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
-                  </svg>
-                </i>
-              </button>
-              <ul
-                className={`dropdown-menu left-0 top-[85%] z-10 grid-flow-row grid-cols-[repeat(2,_1fr)] gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:visible group-hover:opacity-100 dark:bg-jacarta-800 lg:invisible lg:absolute lg:!grid lg:translate-y-4 lg:py-8 lg:px-2 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2 relative ${
-                  isCollapse === explore.id ? "block" : "hidden"
-                }`}
-                aria-labelledby="navDropdown-1"
-              >
-                {explore?.pages?.map((page) => (
-                  <li key={page.id} onClick={() => setToggle(false)}>
-                    <Link href="/">
-                      <a className="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                        <span className="bg-light-base mr-3 rounded-xl p-[0.375rem]">
-                          {page.icon}
-                        </span>
-                        <span className="font-display text-jacarta-700 text-sm dark:text-white">
-                          {page.name}
-                        </span>
-                      </a>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+                    
+                    Overview
+                  </button>
+                </ScrollLink> 
+              
+            </li>
+
+            <li className="js-nav-dropdown group relative">
+
+                <ScrollLink
+                          to="about" // The id of the section you want to scroll to
+                          spy={true} // Make Link selected when scroll is at its target's position
+                          smooth={true} // Enable smooth scrolling
+                          offset={0} // Offset from the element's top position
+                          duration={500} // Time in milliseconds for the scroll to complete
+                >
+                  <button
+                    className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
+                  >
+                    
+                    How it work 
+                  </button>
+                </ScrollLink> 
+              
+            </li>
+
+            <li className="js-nav-dropdown group relative">
+
+                <ScrollLink
+                          to="utility" // The id of the section you want to scroll to
+                          spy={true} // Make Link selected when scroll is at its target's position
+                          smooth={true} // Enable smooth scrolling
+                          offset={0} // Offset from the element's top position
+                          duration={500} // Time in milliseconds for the scroll to complete
+                >
+                  <button
+                    className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
+                  >
+                    
+                    Token Utility 
+                  </button>
+                </ScrollLink> 
+              
+            </li>
+
+            <li className="js-nav-dropdown group relative">
+
+                <ScrollLink
+                          to="utility" // The id of the section you want to scroll to
+                          spy={true} // Make Link selected when scroll is at its target's position
+                          smooth={true} // Enable smooth scrolling
+                          offset={0} // Offset from the element's top position
+                          duration={500} // Time in milliseconds for the scroll to complete
+                >
+                  <button
+                    className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
+                  >
+                    
+                    Tokenomic 
+                  </button>
+                </ScrollLink> 
+              
+            </li>
+
+
+            <li className="js-nav-dropdown group relative">
+
+                <ScrollLink
+                          to="Roadmap" // The id of the section you want to scroll to
+                          spy={true} // Make Link selected when scroll is at its target's position
+                          smooth={true} // Enable smooth scrolling
+                          offset={0} // Offset from the element's top position
+                          duration={500} // Time in milliseconds for the scroll to complete
+                >
+                  <button
+                    className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
+                  >
+                    
+                    Roadmap 
+                  </button>
+                </ScrollLink> 
+              
             </li>
             <li className="js-nav-dropdown group relative">
-              <button
-                onClick={() => mobileCollapse(resource.id)}
-                className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
-              >
-                <span
-                  className={
-                    isParentPageActive(resource.pages, route.asPath)
-                      ? "text-accent dark:text-accent"
-                      : ""
-                  }
+
+                <ScrollLink
+                          to="ourteam" // The id of the section you want to scroll to
+                          spy={true} // Make Link selected when scroll is at its target's position
+                          smooth={true} // Enable smooth scrolling
+                          offset={0} // Offset from the element's top position
+                          duration={500} // Time in milliseconds for the scroll to complete
                 >
-                  {resource.name}
-                </span>
-                <i className="lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width={24}
-                    height={24}
-                    className="h-4 w-4 dark:fill-white"
+                  <button
+                    className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
                   >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
-                  </svg>
-                </i>
-              </button>
-              <ul
-                className={`dropdown-menu left-0 top-[85%] z-10 grid-flow-row grid-cols-[repeat(2,_1fr)] gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:visible group-hover:opacity-100 dark:bg-jacarta-800 lg:invisible lg:absolute lg:!grid lg:translate-y-4 lg:py-8 lg:px-2 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2 relative ${
-                  isCollapse === resource.id ? "block" : "hidden"
-                }`}
-                aria-labelledby="navDropdown-4"
-              >
-                {resource?.pages?.map((page) => (
-                  <li key={page.id} onClick={() => setToggle(false)}>
-                    <Link href={page.path}>
-                      <a className="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
-                        <span
-                          className={`font-display text-jacarta-700 text-sm dark:text-white ${
-                            isChildrenPageActive(page.path, route.asPath)
-                              ? "text-accent dark:text-accent"
-                              : ""
-                          }`}
-                        >
-                          {page.name}
-                        </span>
-                      </a>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
-            <li className="group" onClick={() => setToggle(false)}>
-              <Link href="/create">
-                <a>
-                  <button className="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">
-                    <span
-                      className={
-                        isChildrenPageActive("/create", route.asPath)
-                          ? "text-accent dark:text-accent"
-                          : ""
-                      }
-                    >
-                      Create
-                    </span>
+                    
+                    Team 
                   </button>
-                </a>
-              </Link>
+                </ScrollLink> 
+              
             </li>
+
+            <li className="js-nav-dropdown group relative">
+
+                <ScrollLink
+                          to="whitepaper" // The id of the section you want to scroll to
+                          spy={true} // Make Link selected when scroll is at its target's position
+                          smooth={true} // Enable smooth scrolling
+                          offset={0} // Offset from the element's top position
+                          duration={500} // Time in milliseconds for the scroll to complete
+                >
+                  <button
+                    className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
+                  >
+                    
+                    Get Whiteper 
+                  </button>
+                </ScrollLink> 
+              
+            </li>
+            
           </ul>
         </nav>
         {/* End navbar mobile menu  */}
 
         <div className="mt-10 w-full lg:hidden">
-          <div className="js-wallet bg-accent shadow-accent-volume hover:bg-accent-dark block w-full rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
-            MetaMask not available :
-          </div>
+         
           <hr className="dark:bg-jacarta-600 bg-jacarta-100 my-5 h-px border-0" />
           <div className="flex items-center justify-center space-x-5">
             <a className="group">

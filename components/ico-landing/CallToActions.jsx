@@ -39,7 +39,7 @@ const CallToActions = () => {
             </p>
           </div>
           <a
-            href="#"
+            href="https://t.me/+ct2LKyFCJ9MwNGE0"
             className="inline-block self-center rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
           >
             {calltoActionContent.btnText}

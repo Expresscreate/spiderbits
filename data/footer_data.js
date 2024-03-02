@@ -73,29 +73,20 @@ const footerMenuList = [
 const socialIcons = [
   {
     id: 1,
-    href: "https://www.facebook.com",
-    text: "facebook",
+    href: "https://t.me/+ct2LKyFCJ9MwNGE0",
+    text: "telegram",
   },
   {
     id: 2,
-    href: "https://www.twitter.com",
+    href: "https://x.com/IchatouN66956?t=Cwfuwgx1iISc9dprT6ZrHg&s=08",
     text: "twitter",
   },
   {
     id: 3,
-    href: "https://www.discord.com",
+    href: "https://discord.com/invite/vqFxYmKyWD",
     text: "discord",
   },
-  {
-    id: 4,
-    href: "https://www.instagram.com",
-    text: "instagram",
-  },
-  {
-    id: 5,
-    href: "https://www.tiktok.com",
-    text: "tiktok",
-  },
+ 
 ];
 
 export { footerMenuList, socialIcons };

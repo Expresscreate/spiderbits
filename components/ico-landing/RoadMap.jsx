@@ -33,54 +33,51 @@ const RoadMap = () => {
   const roadMapContent = [
     {
       id: 1,
-      text: `Platform Conceptualization and Research: Perform thorough research on blockchain, NFTs, and lottery systems for SpiderBits' foundation.
-      Team Formation: Create a skilled team in blockchain, game design, and business for project execution.
-      Whitepaper and Litepaper: Produce detailed documents explaining SpiderBits' vision, solution, tokenomics, and timeline.
-      Community Building and Airdrops: Engage with potential users via social media and events, and conduct airdrops for early support.
-      Token Presale Preparation: Set up for presale, including defining sale details, goals, and marketing to attract investment.`,
+      text: `- Platform Conceptualization and Research
+      - Team Formation
+      - Whitepaper and Litepaper Development
+      - Community Building and Airdrops
+      - Token Presale Preparation
+      `,
     },
     {
       id: 2,
-      text: `Token Presale Launch: 
-      Launch the SpiderBits token presale, offering early investors the opportunity to purchase tokens at a discounted rate. 
-      Marketing and Promotion: 
-      Execute targeted marketing campaigns to promote the token presale and attract potential investors from the crypto community.
-      Community Engagement: 
-      Engage with the community to provide updates on the presale progress, answer questions, and address concerns raised by prospective investors. 
-      Token Sale Platform Integration: 
-      Integrate secure and user-friendly platforms for token sale transactions, ensuring a smooth and efficient process for participants.`,
+      text: `- Token Presale Launch
+      - Marketing and Promotion
+      - Community Engagement
+      - Token Sale Platform Integration
+      `,
     },
     {
       id: 3,
-      text: `Smart Contract Development: 
-             Develop and deploy smart contracts for lottery ticket purchasing, NFT minting, staking, and governance functionalities. 
-             Platform Architecture: 
-             Design and implement the backend infrastructure, front-end interface, and user experience flow of the SpiderBits platform. 
-             NFT Integration: 
-             Integrate non-fungible tokens (NFTs) into the SpiderBits platform, including the creation of unique poker cards for lottery participation. 
-             Security and Testing: 
-             Conduct rigorous security audits and testing phases to ensure the integrity and reliability of the SpiderBits platform.`,
+      text: `- Smart Contract Development
+      - Platform Architecture
+      - NFT Integration
+      - Security and Testing
+      `,
     },
     {
       id: 4,
-      text: `Public Token Sale Launch: Launch the public token sale, offering SpiderBits tokens to a wider audience of investors and enthusiasts.
-             Marketing and Promotion: Ramp up marketing efforts to generate hype and attract participants to the public token sale.
-             Community Engagement: Continue engaging with the community to provide updates on the token sale progress and address any inquiries or concerns.
-             Token Sale Platform Integration: Ensure seamless integration of token sale platforms to accommodate high demand and facilitate efficient token distribution.`,
+      text: `- Public Token Sale Launch
+      - Marketing and Promotion
+      - Community Engagement
+      - Token Sale Platform Integration
+      `,
     },
     {
       id: 5,
-      text: `Token Listing Preparation: 
-      Prepare for the listing of SpiderBits tokens on cryptocurrency exchanges by completing necessary documentation, compliance checks, and technical integrations. 
-      Exchange Partnerships: Forge partnerships with reputable cryptocurrency exchanges for the listing of SpiderBits tokens, ensuring liquidity and accessibility for token holders. 
-      Token Listing Event: Officially list SpiderBits tokens on selected cryptocurrency exchanges, allowing traders and investors to buy, sell, and trade BITS tokens on secondary markets. 
-      Market Making Support: Provide market making support and liquidity incentives to ensure healthy trading activity and price stability for SpiderBits tokens upon listing.`,
+      text: `- Token Listing Preparation
+      - Exchange Partnerships
+      - Token Listing Event
+      - Market Making Support
+      `,
     },
     {
       id: 6,
-      text: `Public Platform Launch: Officially launch the SpiderBits platform to the public, allowing users to participate in lotteries, stake tokens, and engage with NFTs. 
-      Marketing and Promotion: Execute comprehensive marketing campaigns across various channels to promote the SpiderBits platform and attract users. 
-      Partnership Expansion: Forge strategic partnerships with other blockchain projects, gaming platforms, and lottery organizations to expand the reach and adoption of SpiderBits.`,
+      text: `- Public Platform Launch
+      - Marketing and Promotion
+      - Partnership Expansion
+      `,
     },
    
   ];

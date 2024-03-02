@@ -4,7 +4,7 @@ const Benifits = () => {
   return (
     <>
       {/* <!-- Benefits --> */}
-      <section className="py-24 dark:bg-jacarta-900">
+      <section className="py-24 dark:bg-jacarta-900" id="faq">
         <div className="container">
           <div className="mx-auto mb-16 max-w-xl text-center">
             <h2 className="mb-6 text-center font-display text-3xl font-medium text-jacarta-700 dark:text-white">

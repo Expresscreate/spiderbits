@@ -17,7 +17,10 @@ const Features = () => {
         </>
       ),
       title: "Token Sale (Public and Presale)",
-      text: `Complete the identity verification process to secure your account and transactions.`,
+      text: `- Presale Allocation: 20% of total token supply
+             - Public Sale Allocation: 30% of total token supply
+             - Total Allocation: 50% of total token supply
+      `,
     },
     {
       id: 2,
@@ -36,7 +39,11 @@ const Features = () => {
         </>
       ),
       title: "Community and Ecosystem Development",
-      text: `Add funds to your crypto account to start trading crypto. You can add funds with a variety of payment methods.`,
+      text: `- Airdrops: 5% of total token supply
+      - Community Rewards: 5% of total token supply
+      - Ecosystem Development: 10% of total token supply
+      - Total Allocation: 20% of total token supply
+   `,
     },
     {
       id: 3,
@@ -55,7 +62,10 @@ const Features = () => {
         </>
       ),
       title: "Team and Advisors",
-      text: `Complete the identity verification process to secure your account and transactions.`,
+      text: `- Team: 15% of total token supply
+      - Advisors: 5% of total token supply
+      - Total Allocation: 20% of total token supply
+   `,
     },
     {
       id: 4,
@@ -74,14 +84,17 @@ const Features = () => {
         </>
       ),
       title: "Reserve and Liquidity",
-      text: `Complete the identity verification process to secure your account and transactions.`,
+      text: `- Reserve Fund: 10% of total token supply
+      -  Liquidity Pool: 5% of total token supply
+      - Total Allocation: 15% of total token supply
+   `,
     },
   ];
 
   return (
     <>
       {/* <!-- Features --> */}
-      <section className="relative pt-24 pb-10 dark:bg-jacarta-800"  
+      <section className="relative pt-24 pb-10 dark:bg-jacarta-800" id="tokenomics" 
            style={{
             backgroundImage: "url('/images/circle-card-bg.jpg')",
             backgroundPosition: 'right bottom',
@@ -133,7 +146,7 @@ Below is a detailed breakdown of the tokenomics:
                     <h3 className="mb-3 mt-2 block font-display text-xl font-semibold text-jacarta-700 dark:text-white">
                       {item.title}
                     </h3>
-                    <p className="dark:text-jacarta-300">{item.text}</p>
+                    <p className="dark:text-jacarta-100">{item.text}</p>
                   </div>
                 </div>
               ))}

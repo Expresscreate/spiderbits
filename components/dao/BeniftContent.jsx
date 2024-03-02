@@ -26,13 +26,13 @@ const BeniftContent = () => {
 
                 <div>
                   <span className="mb-2 mt-1 block font-display text-xl font-medium group-hover:text-accent dark:text-white transition transition-colors">
-                      What is SPiderBits?
+                  What is SpiderBits and how does it work?
                   </span>
                   <div className="nav-link-content hidden">
                     <p className="text-jacarta-500 dark:text-jacarta-300">
-                      DAOs own the smart contracts and digital assets (NFTs) to
-                      bring autonomy, removing the concept of CEO and leadership
-                      from any NFT platform.
+                    SpiderBits is a crypto lottery NFT game that combines traditional lottery mechanics with the integration of non-fungible tokens (NFTs). 
+                    Players participate in the lottery by purchasing tickets with SpiderBits tokens and organizing a series of NFT poker cards in a chronological order to win prizes. 
+                    Even if players don't win the lottery, they can still earn rewards by staking SpiderBits tokens.
                     </p>
                   </div>
                 </div>
@@ -58,13 +58,13 @@ const BeniftContent = () => {
 
                 <div>
                   <span className="mb-2 mt-1 block font-display text-xl font-medium text-jacarta-700 group-hover:text-accent dark:text-white transition transition-colors">
-                    What is our native token Bits?
+                   What is the utility of the SpiderBits token?
                   </span>
                   <div className="nav-link-content hidden">
                     <p className="text-jacarta-500 dark:text-jacarta-300">
-                      DAOs own the smart contracts and digital assets (NFTs) to
-                      bring autonomy, removing the concept of CEO and leadership
-                      from any NFT platform.
+                    The SpiderBits token serves multiple purposes within the ecosystem. It is used as the primary currency for purchasing lottery tickets and minting NFTs.
+                     Additionally, holding and staking SpiderBits tokens allows users to participate in the lottery and earn rewards. 
+                    The token also facilitates governance and decision-making within the SpiderBits community.
                     </p>
                   </div>
                 </div>
@@ -90,13 +90,13 @@ const BeniftContent = () => {
 
                 <div>
                   <span className="mb-2 mt-1 block font-display text-xl font-medium text-jacarta-700 group-hover:text-accent dark:text-white transition transition-colors">
-                    Where is our NFTs hosted?
+                  How are winners determined in the SpiderBits lottery?
                   </span>
                   <div className="nav-link-content hidden">
                     <p className="text-jacarta-500 dark:text-jacarta-300">
-                      DAOs own the smart contracts and digital assets (NFTs) to
-                      bring autonomy, removing the concept of CEO and leadership
-                      from any NFT platform.
+                    Winners in the SpiderBits lottery are determined based on the organization of NFT poker cards in a chronological order, similar to the traditional spider solitaire game. 
+                    Players purchase lottery tickets containing series numbers corresponding to the poker cards. 
+                    If a player's series number matches an Ace card, they are eligible to win prizes by completing the chronological sequence from Ace to King.
                     </p>
                   </div>
                 </div>
@@ -122,13 +122,14 @@ const BeniftContent = () => {
 
                 <div>
                   <span className="mb-2 mt-1 block font-display text-xl font-medium text-jacarta-700 group-hover:text-accent dark:text-white transition transition-colors">
-                    How can I use my NFT?
+                  What is the benefit of participating in the SpiderBits ecosystem?
                   </span>
                   <div className="nav-link-content hidden">
                     <p className="text-jacarta-500 dark:text-jacarta-300">
-                      DAOs own the smart contracts and digital assets (NFTs) to
-                      bring autonomy, removing the concept of CEO and leadership
-                      from any NFT platform.
+                    Participating in the SpiderBits ecosystem offers several benefits. 
+                    Players have the opportunity to win prizes in the lottery while also earning rewards through staking SpiderBits tokens. 
+                    Additionally, the integration of NFTs adds a unique and entertaining element to the lottery experience, allowing players to collect and trade digital assets. 
+                    As the ecosystem grows, SpiderBits tokens may also appreciate in value, providing potential financial benefits to participants.
                     </p>
                   </div>
                 </div>

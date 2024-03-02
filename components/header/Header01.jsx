@@ -435,7 +435,7 @@ export default function Header01() {
                 {/* Tokenomic  */}
                 <li className="js-nav-dropdown nav-item dropdown group relative">
                 <ScrollLink
-                      to="utility" // The id of the section you want to scroll to
+                      to="tokenomics" // The id of the section you want to scroll to
                       spy={true} // Make Link selected when scroll is at its target's position
                       smooth={true} // Enable smooth scrolling
                       offset={0} // Offset from the element's top position
@@ -443,13 +443,32 @@ export default function Header01() {
                     >
                     <button className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
                       
-                       Tokenomic
+                       Tokenomics
 
                     </button>
                   </ScrollLink>                   
                 
                 </li>
-                {/* create */}
+
+                {/* Team */}
+                <li className="js-nav-dropdown group relative">
+                <ScrollLink
+                      to="ourteam" // The id of the section you want to scroll to
+                      spy={true} // Make Link selected when scroll is at its target's position
+                      smooth={true} // Enable smooth scrolling
+                      offset={0} // Offset from the element's top position
+                      duration={500} // Time in milliseconds for the scroll to complete
+                    >
+                      <button className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
+                    
+                      Team
+
+                      </button>
+                  </ScrollLink>
+                  
+                </li>
+
+                {/* Roadmap */}
                 <li className="group">
                   <ScrollLink
                       to="roadmap" // The id of the section you want to scroll to
@@ -464,10 +483,10 @@ export default function Header01() {
                     </ScrollLink>
                 </li>
 
-                {/* resource */}
+                {/* FAQ */}
                 <li className="js-nav-dropdown group relative">
                 <ScrollLink
-                      to="ourteam" // The id of the section you want to scroll to
+                      to="faq" // The id of the section you want to scroll to
                       spy={true} // Make Link selected when scroll is at its target's position
                       smooth={true} // Enable smooth scrolling
                       offset={0} // Offset from the element's top position
@@ -475,7 +494,7 @@ export default function Header01() {
                     >
                       <button className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
                     
-                      Team
+                      FAQ
 
                       </button>
                   </ScrollLink>
@@ -501,7 +520,7 @@ export default function Header01() {
                       borderRadius: '10px'
                     }}
                 >
-                   <a herf="">Get Whiteper</a>
+                   <a herf="/SpiderBits-litepaper.pdf">Get Whiteper</a>
                 </button>
                 
                 
@@ -540,7 +559,7 @@ export default function Header01() {
 
       {/* start mobile menu and it's other materials  */}
       <div
-        className={`lg:hidden js-mobile-menu dark:bg-jacarta-800 invisible fixed inset-0 z-20 ml-auto items-center bg-white opacity-0 lg:visible lg:relative lg:inset-auto lg:bg-transparent lg:opacity-100 dark:lg:bg-transparent ${
+        className={`lg:hidden js-mobile-menu dark:bg-jacarta-800 invisible fixed inset-0 z-20 ml-auto items-center bg-white opacity-0 lg:visible lg:relative lg:inset-auto lg:bg-transparent lg:opacity-50 dark:lg:bg-transparent ${
           toggle ? "nav-menu--is-open" : "hidden"
         }`}
       >
@@ -747,7 +766,7 @@ export default function Header01() {
             <li className="js-nav-dropdown group relative">
 
                 <ScrollLink
-                          to="utility" // The id of the section you want to scroll to
+                          to="tokenomics" // The id of the section you want to scroll to
                           spy={true} // Make Link selected when scroll is at its target's position
                           smooth={true} // Enable smooth scrolling
                           offset={0} // Offset from the element's top position
@@ -757,12 +776,30 @@ export default function Header01() {
                     className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
                   >
                     
-                    Tokenomic 
+                    Tokenomics 
                   </button>
                 </ScrollLink> 
               
             </li>
+            
+            <li className="js-nav-dropdown group relative">
 
+                <ScrollLink
+                          to="ourteam" // The id of the section you want to scroll to
+                          spy={true} // Make Link selected when scroll is at its target's position
+                          smooth={true} // Enable smooth scrolling
+                          offset={0} // Offset from the element's top position
+                          duration={500} // Time in milliseconds for the scroll to complete
+                >
+                  <button
+                    className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
+                  >
+                    
+                    Team 
+                  </button>
+                </ScrollLink> 
+              
+            </li>
 
             <li className="js-nav-dropdown group relative">
 
@@ -785,7 +822,7 @@ export default function Header01() {
             <li className="js-nav-dropdown group relative">
 
                 <ScrollLink
-                          to="ourteam" // The id of the section you want to scroll to
+                          to="faq" // The id of the section you want to scroll to
                           spy={true} // Make Link selected when scroll is at its target's position
                           smooth={true} // Enable smooth scrolling
                           offset={0} // Offset from the element's top position
@@ -795,11 +832,12 @@ export default function Header01() {
                     className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
                   >
                     
-                    Team 
+                    FAQ 
                   </button>
                 </ScrollLink> 
               
             </li>
+            
 
             <li className="js-nav-dropdown group relative">
 

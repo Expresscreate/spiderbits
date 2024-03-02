@@ -32,7 +32,7 @@ const BeniftContent = () => {
                     <p className="text-jacarta-500 dark:text-jacarta-300">
                     SpiderBits is a crypto lottery NFT game that combines traditional lottery mechanics with the integration of non-fungible tokens (NFTs). 
                     Players participate in the lottery by purchasing tickets with SpiderBits tokens and organizing a series of NFT poker cards in a chronological order to win prizes. 
-                    Even if players don't win the lottery, they can still earn rewards by staking SpiderBits tokens.
+                    Even if players don`&apos;`t win the lottery, they can still earn rewards by staking SpiderBits tokens.
                     </p>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ const BeniftContent = () => {
                     <p className="text-jacarta-500 dark:text-jacarta-300">
                     Winners in the SpiderBits lottery are determined based on the organization of NFT poker cards in a chronological order, similar to the traditional spider solitaire game. 
                     Players purchase lottery tickets containing series numbers corresponding to the poker cards. 
-                    If a player's series number matches an Ace card, they are eligible to win prizes by completing the chronological sequence from Ace to King.
+                    If a player`&apos;`s series number matches an Ace card, they are eligible to win prizes by completing the chronological sequence from Ace to King.
                     </p>
                   </div>
                 </div>
